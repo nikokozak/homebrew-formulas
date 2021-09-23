@@ -1,7 +1,8 @@
 class Moon < Formula
   desc "Display a daily, weekly, or monthly moon-phase calendar in your terminal!"
   homepage "https://github.com/nikokozak/moon"
-  url "https://github.com/nikokozak/moon/dist/moon.tar.gz"
+  url "https://github.com/nikokozak/moon/dist/0.0.1.tar.gz"
+  sha256 
   license "MIT"
 
   depends_on "ruby" if Hardware::CPU.arm?
