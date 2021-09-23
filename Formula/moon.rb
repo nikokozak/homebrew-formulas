@@ -12,7 +12,7 @@ class Moon < Formula
   def install
     ENV["GEM_HOME"] = libexec
     system "gem", "build", "moon.gemspec"
-    system "gem", "install", "moon-#{version}.gem"
+    system "gem", "install", "mooncal-#{version}.gem"
 
     bin.install libexec/"bin/moon"
     bin.env_script_all_files(libexec/"bin", GEM_HOME: ENV["GEM_HOME"])
