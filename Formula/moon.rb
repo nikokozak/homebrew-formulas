@@ -10,6 +10,8 @@ class Moon < Formula
   uses_from_macos "ruby", since: :catalina 
 
   def install
+    ENV["GEM_HOME"] = libexec
+
     system "gem", "build", "moon.gemspec"
     system "gem", "install", "mooncal-*.gem"
   end
